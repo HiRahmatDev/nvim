@@ -14,7 +14,7 @@ require('better_escape').setup({
       k = { j = '<C-\\><C-n>' }
     },
     v = {
-      k = { j = '<Esc>' }
+      j = { k = false }
     },
     s = {
       k = { j = '<Esc>' }
