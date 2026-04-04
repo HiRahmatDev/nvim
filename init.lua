@@ -71,6 +71,11 @@ vim.pack.add({
   -- Nvim Eslint
   'https://github.com/esmuellert/nvim-eslint',
 
+  -- Lualine
+  'https://github.com/nvim-lualine/lualine.nvim',
+  -- optional dependencies
+  -- 'https://github.com/nvim-tree/nvim-web-devicons',
+
   -- Misc
   'https://github.com/nvim-tree/nvim-web-devicons',
   'https://github.com/MunifTanjim/nui.nvim',
@@ -86,6 +91,7 @@ vim.pack.add({
 require('plugins.neo-tree')
 require('plugins.telescope')
 require('plugins.colorscheme')
+require('plugins.lualine')
 require('plugins.completion')
 require('plugins.conform')
 require('plugins.mason')
