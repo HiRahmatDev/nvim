@@ -1,3 +1,9 @@
+require('neo-tree').setup({
+  source_selector = {
+    winbar = true
+  }
+})
+
 local opts = require('utils.keymap_opts')
 
 vim.keymap.set({ 'n' }, '\\f', function()

@@ -18,9 +18,15 @@ vim.keymap.set({ 'n' }, ';w', ':w<CR>', opts)
 
 -- Quick close
 vim.keymap.set({ 'n' }, ';c', ':close<CR>', opts)
+vim.keymap.set({ 'n' }, ';tc', ':tabclose<CR>', opts)
 
 -- Quick quit
 vim.keymap.set({ 'n' }, ';q', ':q<CR>', opts)
+vim.keymap.set({ 'n' }, ';Q', ':qa<CR>', opts)
+
+-- Toggle wrap with Alt + Shift + z
+vim.keymap.set({ 'n' }, '<A-Z>', ':setlocal invwrap<CR>', opts)
+vim.keymap.set({ 'i' }, '<A-Z>', '<Esc>:setlocal invwrap<CR>a', opts)
 
 -- Disable the spacebar key's default behavior in Normal and Visual modes
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', opts)

@@ -14,41 +14,56 @@ vim.cmd('packadd! nohlsearch')
 
 -- Install third-party plugins via "vim.pack.add()".
 vim.pack.add({
-  -- Quickstart configs for LSP
+  -- LSP
   'https://github.com/neovim/nvim-lspconfig',
   'https://github.com/mason-org/mason.nvim',
-
-  -- Autocompletion
-  'https://github.com/nvim-mini/mini.completion',
-
-  -- Enhanced quickfix/loclist
-  'https://github.com/stevearc/quicker.nvim',
-
-  -- Git integration
-  'https://github.com/lewis6991/gitsigns.nvim',
-
-  -- File finder
-  {
-    src = 'https://github.com/nvim-telescope/telescope.nvim',
-    version = vim.version.range('0.2'),
-  },
-
-  -- File manager
-  {
-    src = 'https://github.com/nvim-neo-tree/neo-tree.nvim',
-    version = vim.version.range('3'),
-  },
-  -- dependencies
-  'https://github.com/nvim-lua/plenary.nvim',
-  'https://github.com/MunifTanjim/nui.nvim',
-  -- optional, but recommended
-  'https://github.com/nvim-tree/nvim-web-devicons',
 
   -- Color scheme
   {
     src = 'https://github.com/catppuccin/nvim',
     name = 'catppuccin',
   },
+
+  -- Completion
+  'https://github.com/nvim-mini/mini.completion',
+
+  -- Enhanced quickfix/loclist
+  'https://github.com/stevearc/quicker.nvim',
+
+  -- File finder
+  {
+    src = 'https://github.com/nvim-telescope/telescope.nvim',
+    version = vim.version.range('0.2'),
+  },
+  -- required dependencies
+  -- 'https://github.com/nvim-lua/plenary.nvim',
+
+  -- File manager
+  {
+    src = 'https://github.com/nvim-neo-tree/neo-tree.nvim',
+    version = vim.version.range('3'),
+  },
+  -- required dependencies
+  -- 'https://github.com/nvim-lua/plenary.nvim',
+  -- 'https://github.com/MunifTanjim/nui.nvim',
+  -- optional dependencies
+  -- 'https://github.com/nvim-tree/nvim-web-devicons',
+
+  -- Git integration
+  --
+  --    Gitsigns
+  'https://github.com/lewis6991/gitsigns.nvim',
+  --
+  --    Neogit
+  'https://github.com/neogitorg/neogit',
+  --    required dependencies
+  --    'https://github.com/nvim-lua/plenary.nvim',
+  --    optional dependencies
+  --    'https://github.com/nvim-telescope/telescope.nvim',
+  --    'https://github.com/sindrets/diffview.nvim',
+  --
+  --    Diffview
+  'https://github.com/sindrets/diffview.nvim',
 
   -- Formatter
   'https://github.com/stevearc/conform.nvim',
@@ -57,6 +72,9 @@ vim.pack.add({
   'https://github.com/esmuellert/nvim-eslint',
 
   -- Misc
+  'https://github.com/nvim-tree/nvim-web-devicons',
+  'https://github.com/MunifTanjim/nui.nvim',
+  'https://github.com/nvim-lua/plenary.nvim',
   'https://github.com/dstein64/vim-startuptime',
   'https://github.com/max397574/better-escape.nvim',
   'https://github.com/nvim-mini/mini.surround',
@@ -72,7 +90,7 @@ require('plugins.completion')
 require('plugins.conform')
 require('plugins.mason')
 require('plugins.quicker')
-require('plugins.gitsigns')
+require('plugins.git-integration')
 require('plugins.nvim-eslint')
 require('plugins.misc')
 
