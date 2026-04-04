@@ -24,9 +24,8 @@ vim.keymap.set({ 'n' }, ';tc', ':tabclose<CR>', opts)
 vim.keymap.set({ 'n' }, ';q', ':q<CR>', opts)
 vim.keymap.set({ 'n' }, ';Q', ':qa<CR>', opts)
 
--- Toggle wrap with Alt + Shift + z
-vim.keymap.set({ 'n' }, '<A-Z>', ':setlocal invwrap<CR>', opts)
-vim.keymap.set({ 'i' }, '<A-Z>', '<Esc>:setlocal invwrap<CR>a', opts)
+-- Toggle wrap
+vim.keymap.set({ 'n' }, ';z', ':setlocal invwrap<CR>', opts)
 
 -- Disable the spacebar key's default behavior in Normal and Visual modes
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', opts)

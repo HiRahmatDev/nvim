@@ -1,7 +1,5 @@
 require('neo-tree').setup({
-  source_selector = {
-    winbar = true
-  }
+  window = { position = 'float' },
 })
 
 local opts = require('utils.keymap_opts')

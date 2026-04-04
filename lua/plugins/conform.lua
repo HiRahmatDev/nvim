@@ -12,5 +12,4 @@ require('conform').setup({
 })
 
 local opts = require('utils.keymap_opts')
-vim.keymap.set({ 'n' }, '<leader>F', require('conform').format, opts)
-vim.keymap.set({ 'n' }, 'F<leader>', require('conform').format, opts)
+vim.keymap.set({ 'n' }, ';f', require('conform').format, opts)
