@@ -24,6 +24,9 @@ vim.keymap.set({ 'n' }, ';tc', ':tabclose<CR>', opts)
 vim.keymap.set({ 'n' }, ';q', ':q<CR>', opts)
 vim.keymap.set({ 'n' }, ';Q', ':qa<CR>', opts)
 
+-- Quick refresh current buffer
+vim.keymap.set({ 'n' }, ';e', ':<CR>', opts)
+
 -- Toggle wrap
 vim.keymap.set({ 'n' }, ';z', ':setlocal invwrap<CR>', opts)
 

@@ -4,6 +4,10 @@
       "rev": "19a38aab94961016430905ebec30d272a01e9742",
       "src": "https://github.com/max397574/better-escape.nvim"
     },
+    "breadcrumbs.nvim": {
+      "rev": "a59e3ee12818135098e5ce8efeb7b58b675b09ec",
+      "src": "https://github.com/LunarVim/breadcrumbs.nvim"
+    },
     "catppuccin": {
       "rev": "a7788416689dbefea659d9e9415c87926b0ba5d8",
       "src": "https://github.com/catppuccin/nvim"
@@ -19,6 +23,10 @@
     "gitsigns.nvim": {
       "rev": "8a796a440fde3eeed3f33aecce9dab863b2be218",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
+    "ibl": {
+      "rev": "d28a3f70721c79e3c5f6693057ae929f3d9c0a03",
+      "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
     },
     "lualine.nvim": {
       "rev": "74114f0df664f14d7c228945693ba68a3b70a794",
@@ -60,6 +68,10 @@
     "nvim-lspconfig": {
       "rev": "16812abf0e8d8175155f26143a8504e8253e92b0",
       "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-navic": {
+      "rev": "f5eba192f39b453675d115351808bd51276d9de5",
+      "src": "https://github.com/SmiteshP/nvim-navic"
     },
     "nvim-web-devicons": {
       "rev": "d7462543c9e366c0d196c7f67a945eaaf5d99414",

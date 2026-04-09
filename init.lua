@@ -84,6 +84,12 @@ vim.pack.add({
   'https://github.com/max397574/better-escape.nvim',
   'https://github.com/nvim-mini/mini.surround',
   'https://github.com/nvim-mini/mini.pairs',
+  'https://github.com/SmiteshP/nvim-navic',
+  'https://github.com/LunarVim/breadcrumbs.nvim',
+  {
+    src = 'https://github.com/lukas-reineke/indent-blankline.nvim',
+    name = 'ibl',
+  },
 })
 
 -- SETUP PLUGINS
@@ -102,3 +108,4 @@ require('plugins.misc')
 
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('ts_ls')
+vim.lsp.enable('tailwindcss')
