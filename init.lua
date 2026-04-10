@@ -106,6 +106,11 @@ require('plugins.git-integration')
 require('plugins.nvim-eslint')
 require('plugins.misc')
 
+-- SETUP LSPs
+-- 
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('ts_ls')
 vim.lsp.enable('tailwindcss')
+vim.lsp.enable('powershell_es')
+-- LOG LSP
+vim.lsp.log.set_level(vim.log.levels.OFF)

@@ -1,4 +1,6 @@
-require('conform').setup({
+local conform = require('conform')
+
+conform.setup({
   formatters_by_ft = {
     lua = { 'stylua' },
     json = { 'prettier' },
@@ -35,4 +37,4 @@ require('conform').setup({
 })
 
 local opts = require('utils.keymap_opts')
-vim.keymap.set({ 'n' }, ';f', require('conform').format, opts)
+vim.keymap.set({ 'n' }, ';f', conform.format, opts)
