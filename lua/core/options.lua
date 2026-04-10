@@ -22,3 +22,4 @@ vim.o.cursorline = true -- Highlight the line where the cursor is on.
 vim.o.scrolloff = 8 -- Keep this many screen lines above/below the cursor.
 vim.o.wrap = false -- Default to false, you can toggle it by ';z'. See 'core.keymaps:31'.
 vim.o.linebreak = true -- Wrap whole word.
+vim.o.updatetime = 300
