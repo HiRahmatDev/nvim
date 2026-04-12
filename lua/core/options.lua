@@ -6,12 +6,14 @@
 -- To see documentation for an option, you can use `:h 'optionname'`, for example `:h 'number'`
 -- (Note the single quotes)
 
+local indentsize = 4
+
 -- Basic options
 vim.o.number = true -- Show line numbers in a column.
 vim.o.relativenumber = true -- Show line numbers relative to where the cursor is.
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.shiftwidth = 4
+vim.o.tabstop = indentsize
+vim.o.softtabstop = indentsize
+vim.o.shiftwidth = indentsize
 vim.o.expandtab = true
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
