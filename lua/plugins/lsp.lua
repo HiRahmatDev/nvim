@@ -1,4 +1,5 @@
 require('mason').setup()
+
 require('mason-lspconfig').setup({
   ensure_installed = {
     'lua_ls',
@@ -7,3 +8,10 @@ require('mason-lspconfig').setup({
     'powershell_es',
   },
 })
+
+vim.lsp.log.set_level(vim.log.levels.OFF)
+
+vim.lsp.enable('lua_ls')
+vim.lsp.enable('ts_ls')
+vim.lsp.enable('tailwindcss')
+vim.lsp.enable('powershell_es')
