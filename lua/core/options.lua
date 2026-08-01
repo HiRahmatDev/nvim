@@ -21,9 +21,9 @@ vim.o.updatetime = 400 -- Increase delay time for CursorHold and other events.
 vim.o.splitbelow = true -- Put default position of horizontal split window to bottom.
 vim.o.splitright = true -- Put default position of vertical split window to right.
 vim.o.swapfile = false -- Disable swap file.
-vim.o.cmdwinheight = vim.o.scrolloff * 2 + 1 -- Set winheight (q:, q/, etc.).
+vim.o.cmdheight = 0
 -- vim.o.fillchars = 'eob: ' -- Remove ~ end of buffer indicator.
-vim.o.sessionoptions = 'blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions'
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 vim.o.autoread = true
 vim.o.winborder = "rounded"
 
@@ -54,15 +54,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.hl.on_yank()
 	end,
 })
-
--- Check for file changes in the background every 2 seconds (2000 ms) even when unfocused
-local timer = vim.uv.new_timer()
-timer:start(
-	2000,
-	2000,
-	vim.schedule_wrap(function()
-		if vim.fn.mode() ~= "c" then
-			vim.cmd("checktime")
-		end
-	end)
-)
