@@ -6,7 +6,7 @@ local opts = { silent = true, noremap = true }
 ---@param rhs string|function Right-hand side of the map (command or Lua function)
 ---@param desc string Description of the keymap
 local function map(modes, lhs, rhs, desc)
-  vim.keymap.set(modes, lhs, rhs, vim.tbl_extend('force', opts, { desc = desc }))
+	vim.keymap.set(modes, lhs, rhs, vim.tbl_extend("force", opts, { desc = desc }))
 end
 
 return map
