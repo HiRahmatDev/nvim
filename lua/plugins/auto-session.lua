@@ -1,6 +1,5 @@
 require("auto-session").setup({
 	auto_save = true,
-	-- close_filetypes_on_save = { "checkhealth", "neo-tree" },
 	session_lens = {
 		mappings = {
 			delete_session = { { "i", "n" }, "<A-d>" },
