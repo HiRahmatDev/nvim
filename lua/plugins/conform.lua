@@ -9,6 +9,7 @@ conform.setup({
 		json = { "prettier" },
 		jsonc = { "prettier" },
 		html = { "prettier" },
+        mustache = { "prettier_html" },
 		css = { "prettier" },
 		scss = { "prettier" },
 		less = { "prettier" },
@@ -23,10 +24,10 @@ conform.setup({
 		markdown = { "prettier" },
 		mdx = { "prettier" },
 		yaml = { "prettier" },
-		svg = { "prettier_svg" },
+		svg = { "prettier_html" },
 	},
 	formatters = {
-		prettier_svg = {
+		prettier_html = {
 			command = "prettier",
 			args = function(_, ctx)
 				return {
