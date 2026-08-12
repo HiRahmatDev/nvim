@@ -21,11 +21,12 @@ vim.o.updatetime = 400 -- Increase delay time for CursorHold and other events.
 vim.o.splitbelow = true -- Put default position of horizontal split window to bottom.
 vim.o.splitright = true -- Put default position of vertical split window to right.
 vim.o.swapfile = false -- Disable swap file.
-vim.o.cmdheight = 0
+-- vim.o.cmdheight = 0
 vim.o.fillchars = "eob: " -- Remove ~ end of buffer indicator.
 vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 vim.o.autoread = true
 vim.o.winborder = "rounded"
+vim.o.signcolumn = "yes"
 
 -- Set <space> as the leader key
 -- See `:h mapleader`
